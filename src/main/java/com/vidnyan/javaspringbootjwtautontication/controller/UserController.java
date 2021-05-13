@@ -1,11 +1,14 @@
 package com.vidnyan.javaspringbootjwtautontication.controller;
 
-import org.apache.catalina.User;
+import com.vidnyan.javaspringbootjwtautontication.entiry.User;
+import com.vidnyan.javaspringbootjwtautontication.utility.JWTUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,18 +35,19 @@ public class UserController {
     }
 
     @PostMapping(value="authonticate")
-    public ResponseEntity createAuthonticationToken(@RequestBody User user) {
+    public ResponseEntity createAuthonticationToken(@RequestBody User user)throws Exception {
 
-        try{
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getName(), user.getPassword()));
+        try{ 
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUserName(), user.getPassword()));
         }catch(Exception e){
             System.out.println(e);
         }
-        UserDetails userDetails = userDetailsService.loadUserByUsername(user.getName());
+
+        UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUserName());
         
-        final String jwtTokenString = "";
+        final String jwtTokenString = jwtUtil.generateToken(userDetails);
         
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(jwtTokenString, HttpStatus.OK);
     }
 
     

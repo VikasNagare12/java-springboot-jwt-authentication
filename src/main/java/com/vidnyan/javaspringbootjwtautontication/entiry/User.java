@@ -1,9 +1,7 @@
 package com.vidnyan.javaspringbootjwtautontication.entiry;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
 
-import org.hibernate.validator.constraints.EAN;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

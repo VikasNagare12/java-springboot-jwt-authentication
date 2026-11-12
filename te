@@ -1,0 +1,523 @@
+documentclass[10pt,a4paper]{article}
+
+% =====================================================
+% PACKAGES
+% =====================================================
+\usepackage[a4paper,margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% =====================================================
+% COLORS
+% =====================================================
+\definecolor{navy}{HTML}{17365D}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{666666}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=navy,
+    linkcolor=navy
+}
+
+% =====================================================
+% PAGE SETTINGS
+% =====================================================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\setlist[itemize]{
+    leftmargin=15pt,
+    itemsep=2pt,
+    topsep=3pt,
+    parsep=0pt
+}
+
+% =====================================================
+% SECTION FORMATTING
+% =====================================================
+\titleformat{\section}
+{\large\bfseries\color{navy}}
+{}{0em}{}[\titlerule]
+
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% =====================================================
+% CUSTOM COMMANDS
+% =====================================================
+\newcommand{\jobheading}[4]{
+    \textbf{#1}\hfill
+    {\small\color{gray}#2}\\
+    \textit{\color{navy}#3}\hfill
+    {\small\color{gray}#4}\\[-2pt]
+}
+
+\newcommand{\projectheading}[2]{
+    \vspace{4pt}
+    \textbf{\color{darkgray}#1}
+    \hfill {\small\color{gray}#2}\\[-3pt]
+}
+
+\newcommand{\skill}[2]{
+    \textbf{#1:} #2\\
+}
+
+% =====================================================
+% DOCUMENT
+% =====================================================
+\begin{document}
+
+% =====================================================
+% HEADER
+% =====================================================
+\begin{center}
+
+    {\Huge\bfseries\color{navy} VIKAS NAGARE}\\[5pt]
+
+    {\large\bfseries
+    JAVA BACKEND ENGINEERING
+    \textbar{} PAYMENTS TECHNOLOGY
+    \textbar{} TECHNICAL LEADERSHIP}\\[7pt]
+
+    Pune, India
+    \quad\textbar\quad
+    +91 9890094887
+    \quad\textbar\quad
+    \href{mailto:vikasnagare19@gmail.com}
+    {vikasnagare19@gmail.com}\\[3pt]
+
+    \href{https://linkedin.com/in/vikas-nagare/}{LinkedIn}
+    \quad\textbar\quad
+    \href{https://github.com/VikasNagare12}{GitHub}
+
+\end{center}
+
+% =====================================================
+% PROFESSIONAL SUMMARY
+% =====================================================
+\section{PROFESSIONAL SUMMARY}
+
+Java Backend Engineering professional with experience
+in designing, developing and supporting enterprise-scale
+banking and payment-processing systems. Strong expertise
+in Java, Spring Boot, microservices, distributed systems,
+Oracle databases, Apache Kafka and IBM MQ.
+
+Experienced in technical design and architecture,
+end-to-end delivery, production issue resolution,
+performance optimization and engineering excellence.
+Currently serving as Service Lead for the BVS microservice
+within Barclays Payments Hub, demonstrating technical
+ownership, engineering guidance and cross-team
+collaboration.
+
+Focused on building scalable, reliable and high-performing
+backend systems while driving technical ownership,
+engineering quality and continuous improvement.
+
+% =====================================================
+% TECHNICAL SKILLS
+% =====================================================
+\section{TECHNICAL SKILLS}
+
+\skill{Programming}
+{Java 21, SQL, Python, JavaScript}
+
+\skill{Frameworks}
+{Spring Boot 3, Spring Framework, Spring JDBC,
+Hibernate, Maven, Apache Camel}
+
+\skill{Architecture}
+{Microservices, Distributed Systems, REST APIs,
+Object-Oriented Design, System Design}
+
+\skill{Messaging}
+{Apache Kafka, IBM MQ}
+
+\skill{Databases}
+{Oracle 19c, MongoDB}
+
+\skill{Performance Engineering}
+{Multithreading, Java Virtual Threads, Concurrency,
+Batch Processing, Performance Optimization}
+
+\skill{Engineering Practices}
+{Code Reviews, Root Cause Analysis, Production Support,
+Technical Design, Problem Solving}
+
+\skill{Technical Leadership}
+{Service Ownership, End-to-End Delivery,
+Technical Mentoring, Cross-Team Coordination}
+
+% =====================================================
+% PROFESSIONAL EXPERIENCE
+% =====================================================
+\section{PROFESSIONAL EXPERIENCE}
+
+% -----------------------------------------------------
+% BARCLAYS
+% -----------------------------------------------------
+\jobheading
+{Software Engineer}
+{November 2022 -- Present}
+{Barclays}
+{Pune, India}
+
+\begin{itemize}
+
+    \item Working on enterprise banking and payment
+    platforms involving multiple microservices,
+    focusing on scalable backend engineering.
+
+    \item Serving as Service Lead for the BVS
+    microservice within Payments Hub (POM),
+    taking technical ownership of service
+    development and delivery.
+
+    \item Driving technical design, implementation
+    and architectural decisions for the BVS service.
+
+    \item Taking ownership of engineering deliverables
+    across requirement analysis, solution design,
+    development, testing and production deployment.
+
+    \item Working on payment-processing services
+    and distributed backend workflows using
+    Java and Spring Boot.
+
+    \item Contributing to high-volume payment-processing
+    workflows, focusing on concurrency management,
+    batch processing and performance optimization.
+
+    \item Working with Java 21, virtual threads,
+    multithreading and Oracle databases to improve
+    application processing efficiency.
+
+    \item Developing and maintaining asynchronous
+    messaging workflows using Apache Kafka and IBM MQ.
+
+    \item Performing root cause analysis of production
+    issues, coordinating with dependent teams and
+    driving technical resolutions.
+
+    \item Conducting code reviews, providing technical
+    guidance and mentoring junior developers.
+
+    \item Coordinating with cross-functional teams
+    to resolve technical dependencies and support
+    end-to-end engineering delivery.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% EVOLVEWARE
+% -----------------------------------------------------
+\jobheading
+{Software Engineer}
+{July 2021 -- November 2022}
+{EvolveWare Information Technology}
+{Pune, India}
+
+\begin{itemize}
+
+    \item Worked on MedERP migration from Struts 1.3
+    and Java 6 to Java 8, Spring Framework,
+    Spring Boot and Angular.
+
+    \item Provided application support, enhancements
+    and bug fixes for the existing MedERP platform.
+
+    \item Worked on RFID to GTIN conversion by
+    identifying RFID patterns and implementing
+    conversion logic.
+
+    \item Developed an automation tool for RFID
+    and barcode printing processes.
+
+    \item Developed an Intelysis pattern-matching
+    and error-detection automation tool, reducing
+    manual processing effort by approximately
+    70--80\%.
+
+    \item Refactored a legacy method containing more
+    than 60,000 lines of code into modular methods
+    and classes, reducing the resulting code to
+    approximately 10,000 lines.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% WEB MINDS
+% -----------------------------------------------------
+\jobheading
+{Software Engineer}
+{July 2020 -- July 2021}
+{Web Minds IT Solution}
+{Pune, India}
+
+\begin{itemize}
+
+    \item Worked on the development of the
+    ASPIRE Recruiter Portal.
+
+    \item Developed resume information extraction
+    patterns to identify section-wise candidate details.
+
+    \item Worked on resume-to-job-description matching
+    using Natural Language Processing and cosine
+    similarity scoring.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% VERITAS
+% -----------------------------------------------------
+\jobheading
+{Master's Level Intern}
+{January 2020 -- June 2020}
+{Veritas Technologies}
+{Pune, India}
+
+\begin{itemize}
+
+    \item Automated the RevPro reconciliation process
+    through a Java web application and reconciliation
+    dashboard, delivering estimated annual savings
+    of 900 man-hours.
+
+    \item Debugged 10 PL/SQL and SQL packages,
+    identifying and fixing 35 bugs.
+
+    \item Worked on the Canada Buy Sell ERP setup
+    project for establishing a new operating unit.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% VIT
+% -----------------------------------------------------
+\jobheading
+{Junior Research Fellow}
+{January 2019 -- December 2019}
+{Vishwakarma Institute of Technology}
+{Pune, India}
+
+\begin{itemize}
+
+    \item Worked on the Maharashtra Government
+    RGSTC research project, Gyan Shodh.
+
+    \item Researched and developed a methodology
+    for Devanagari handwritten word recognition,
+    covering dataset collection, model development
+    and deployment.
+
+    \item Developed Python tools for dataset
+    collection, labeling and verification.
+
+    \item Contributed to Gyan Shodh website development.
+
+\end{itemize}
+
+% =====================================================
+% KEY PROJECTS
+% =====================================================
+\section{KEY PROJECTS}
+
+% -----------------------------------------------------
+% PAYMENTS HUB
+% -----------------------------------------------------
+\projectheading
+{Payments Hub (POM)}
+{Barclays}
+
+\begin{itemize}
+
+    \item Enterprise payment platform comprising
+    multiple microservices supporting payment-related
+    business capabilities.
+
+    \item Serving as Service Lead for the BVS
+    microservice, taking technical ownership
+    of service development and delivery.
+
+    \item Driving technical design, implementation
+    and architectural decisions for the BVS service.
+
+    \item Providing technical guidance and mentoring
+    team members while coordinating with dependent
+    teams to resolve technical challenges.
+
+    \item Supporting service delivery, code reviews,
+    production issue resolution and performance
+    optimization.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% PARTNER BANK
+% -----------------------------------------------------
+\projectheading
+{Partner Bank Payment Engine (PB)}
+{Barclays}
+
+\begin{itemize}
+
+    \item Enterprise payment-engineering platform
+    comprising BPCS, BPMS and BPAS services.
+
+    \item BPMS uses Drools for MOP derivation and
+    business-rule processing.
+
+    \item BPAS supports payment accounting workflows
+    and integrations involving Apache Camel,
+    IBM MQ and Apache Kafka.
+
+    \item Contribute to backend engineering,
+    service integration, payment workflows and
+    technical delivery across the platform.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% MEDERP
+% -----------------------------------------------------
+\projectheading
+{MedERP -- Hospital Management System}
+{EvolveWare}
+
+\begin{itemize}
+
+    \item Enterprise medical application managing
+    hospital operations, patient workflows,
+    inventory, insurance and payment processes.
+
+    \item Contributed to migration from legacy
+    Struts 1.3 and Java 6 to Spring Boot,
+    Java 8 and Angular.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% INTELYSIS
+% -----------------------------------------------------
+\projectheading
+{Intelysis Automation Tool}
+{EvolveWare}
+
+\begin{itemize}
+
+    \item Developed an automated pattern-matching
+    and error-detection solution for XML and RTF
+    statement comparison.
+
+    \item Automated report generation for new
+    patterns and statement errors, reducing
+    manual effort by approximately 70--80\%.
+
+\end{itemize}
+
+% -----------------------------------------------------
+% REVPRO
+% -----------------------------------------------------
+\projectheading
+{RevPro Reconciliation Dashboard}
+{Veritas Technologies}
+
+\begin{itemize}
+
+    \item Developed a Java web-based reconciliation
+    automation solution with estimated annual
+    savings of 900 man-hours.
+
+\end{itemize}
+
+% =====================================================
+% TECHNICAL LEADERSHIP
+% =====================================================
+\section{TECHNICAL LEADERSHIP AND OWNERSHIP}
+
+\begin{itemize}
+
+    \item \textbf{Technical Design and Architecture:}
+    Contribute to technical design discussions,
+    evaluate implementation approaches and support
+    architectural decisions.
+
+    \item \textbf{Service Ownership:}
+    Serve as Service Lead for the BVS microservice,
+    taking technical ownership of its development
+    and delivery.
+
+    \item \textbf{End-to-End Delivery:}
+    Take ownership of technical deliverables
+    from requirement analysis through implementation,
+    testing and production deployment.
+
+    \item \textbf{Engineering Excellence:}
+    Conduct code reviews and provide guidance
+    to improve code quality and maintainability.
+
+    \item \textbf{Mentoring:}
+    Guide junior developers and help teammates
+    resolve complex technical challenges.
+
+    \item \textbf{Production Reliability:}
+    Perform root cause analysis, resolve production
+    issues and identify preventive improvements.
+
+    \item \textbf{Cross-Team Collaboration:}
+    Coordinate with dependent teams and stakeholders
+    to manage technical dependencies and delivery risks.
+
+\end{itemize}
+
+% =====================================================
+% EDUCATION
+% =====================================================
+\section{EDUCATION}
+
+\textbf{Master of Computer Applications (MCA)}
+\hfill 2020\\
+Vishwakarma Institute of Technology, Pune\\
+CGPA: 9.11 / 10
+
+% =====================================================
+% PUBLICATIONS
+% =====================================================
+\section{PUBLICATIONS}
+
+\textbf{Research Paper -- Devanagari Handwritten
+Word Recognition}\\
+
+Published in ICDMAI Conference (2021),
+Springer Publications.
+
+% =====================================================
+% ACHIEVEMENTS
+% =====================================================
+\section{ACHIEVEMENTS AND LEADERSHIP}
+
+\begin{itemize}
+
+    \item Website Development Head at Google Developer
+    Student Clubs (DSC), VIT Pune.
+
+    \item Java Trainer at GedIT Club, VIT Pune,
+    training more than 200 students in Java.
+
+\end{itemize}
+
+\end{document}
